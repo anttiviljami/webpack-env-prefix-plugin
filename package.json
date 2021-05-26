@@ -1,6 +1,6 @@
 {
   "name": "webpack-env-prefix-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Viljami Kuosmanen <viljami@viljami.io>",
   "description": "Webpack plugin to populate process.env with prefixed env vars e.g. REACT_APP",
