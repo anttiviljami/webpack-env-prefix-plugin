@@ -5,7 +5,8 @@ const env = require('react-scripts/config/env')()
 
 class EnvPrefixPlugin extends webpack.DefinePlugin {
   constructor() {
-    super(env.stringified)
+    const { 'process.env': { NODE_ENV, ...definitions } } = env.stringified;
+    super({ 'process.env': definitions })
   }
 }
 
